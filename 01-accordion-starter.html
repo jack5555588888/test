@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Accordion Component</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@200&display=swap" rel="stylesheet">
+
+    <style>
+      /* 
+      MAIN COLOR: #087f5b
+      GREY COLOR: #343a40
+      */
+
+      * {
+        margin: 0;
+        padding: 0;
+      }
+
+      body {
+        font-family: "Roboto Mono", sans-serif;
+        color: #343a40;
+        line-height: 1;
+      }
+
+      .accordion
+      {
+        
+        width: 700px;
+        margin: 100px auto;
+        display:flex;
+        flex-direction: column;
+        gap:24px;
+      }
+      .number,.text
+      {
+        font-size: 24px;
+        color:green;
+      }
+      svg
+      {
+        width:24px;
+        height: 24px;
+        float:right;
+      }
+      .hidden-box p
+      {
+        margin-top: 24px;
+        line-height: 1.5;
+        margin-bottom: 24px;
+      }
+      .hidden-box ul
+      {
+        margin-left: 20px;
+        color:gray;
+        display: flex;
+        flex-direction: column;
+        gap:24px;
+      }
+      .item{
+        box-shadow: 0 0 32px rgb(0, 0, 0) ;
+        padding: 24px;
+        display: grid;
+        grid-template-columns: auto 1fr auto;
+
+      }
+    </style>
+  </head>
+  <body>
+    <div class="accordion">
+    <div class="item">
+      <p class="number">02</p>
+    <p class="text">Incoporate the essential data</p>
+    </div>
+    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+      <path stroke-linecap="round" stroke-linejoin="round" d="M19.5 8.25l-7.5 7.5-7.5-7.5" />
+    </svg>
+    
+    <div class="hidden-box">
+      <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Dicta, cupiditate quia? Hic, vel minus. Maxime modi sequi ipsam aperiam tempora aliquam voluptate nisi aspernatur possimus. Odit saepe labore consequuntur rerum?</p>
+      <ul>
+        <li>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Doloremque, ducimus?</li>
+        <li>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Doloremque, ducimus?</li>
+        <li>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Doloremque, ducimus?</li>
+        <li>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Doloremque, ducimus?</li>
+      </ul>
+    
+    
+    
+    </div>
+
+  </div>
+  </body>
+</html>
